@@ -1,0 +1,90 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "user1",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "password": "pbkdf2_sha256$870000$xtgxRJYin5qRBMig5HzywQ$yeKt6hL7QuRnpsAP7bZ0DTMF95saXvzdMmqL2/XAKMA=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "last_login": null,
+      "date_joined": "2024-02-28T12:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "user2",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "password": "pbkdf2_sha256$870000$xtgxRJYin5qRBMig5HzywQ$yeKt6hL7QuRnpsAP7bZ0DTMF95saXvzdMmqL2/XAKMA=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "last_login": null,
+      "date_joined": "2024-02-28T12:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+    {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.com",
+      "password": "pbkdf2_sha256$870000$xtgxRJYin5qRBMig5HzywQ$yeKt6hL7QuRnpsAP7bZ0DTMF95saXvzdMmqL2/XAKMA=",
+      "is_staff": true,
+      "is_active": true,
+      "is_superuser": true,
+      "last_login": null,
+      "date_joined": "2024-02-28T12:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "chat.thread",
+    "pk": 1,
+    "fields": {
+      "created": "2024-02-28T12:00:00Z",
+      "updated": "2024-02-28T12:30:00Z",
+      "participants": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 1,
+    "fields": {
+      "thread": 1,
+      "sender": 1,
+      "text": "Hello!",
+      "created": "2024-02-28T12:01:00Z",
+      "is_read": false
+    }
+  },
+  {
+    "model": "chat.message",
+    "pk": 2,
+    "fields": {
+      "thread": 1,
+      "sender": 2,
+      "text": "Hi! How are you?",
+      "created": "2024-02-28T12:05:00Z",
+      "is_read": true
+    }
+  }
+]
